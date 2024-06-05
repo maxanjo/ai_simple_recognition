@@ -16,10 +16,11 @@ Let's visualize how a `nn.Linear(2, 3)` layer looks like:
 **Weights:**
 Parameter containing:
 
-<code>
-tensor([[ 0.2414, 0.4184],
-[-0.3388, 0.2584],
-[-0.3394, -0.4914]], requires_grad=True)
+<code>tensor(
+    [[ 0.2414, 0.4184],
+    [-0.3388, 0.2584],
+    [-0.3394, -0.4914]], 
+requires_grad=True)
 </code>
 
 **Bias:**
@@ -136,7 +137,7 @@ Label:
 
 # CrossEntropyLoss
 
-You can thing of loss as about a teacher who knows what is result and gives you a grade how you did your work. The less loss the better neural network works. 
+You can think of loss as a teacher who knows the result and gives you a grade based on how well you did your work. The lower the loss, the better the neural network works.
 
 A good video about crossEntropy:
 https://www.youtube.com/watch?v=xBEh66V9gZo
