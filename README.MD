@@ -98,7 +98,7 @@ transform = transforms.Compose([
 
 We load data as follows:
 
-`testset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=transform)
+`trainset = torchvision.datasets.MNIST(root='./data', train=False, download=True, transform=transform)
 `
 
 Dataset is an object that knows how to:
