@@ -68,11 +68,11 @@ def forward(self, x):
 
 </pre>
 ## Why Flatten the Input?
-The MNIST dataset consists of images of handwritten digits, each of size 28x28 pixels. Convolutional neural networks (CNNs) can operate directly on these 2D images using convolutional layers. However, in your neural network, you're using fully connected (dense) layers, which expect 1D input vectors rather than 2D matrices.
+The MNIST dataset consists of images of handwritten digits, each of size 28x28 pixels. Convolutional neural networks (CNNs) can operate directly on these 2D images using convolutional layers. However, here we're using fully connected (dense) layers, which expect 1D input vectors rather than 2D matrices.
 
 Fully connected layers (also known as dense layers) require the input to be a flat vector because each neuron in the layer is connected to every neuron in the previous layer. Here's how it works:
 
-Input Shape: Each MNIST image is of shape (1, 28, 28) for a single channel (grayscale).
+Input Shape: Each MNIST image is of shape (1, 28, 28) for a single channel (grayscale). Tutorial about tensor shapes(https://www.youtube.com/watch?v=QheqfvqCFS4&t=1900s)
 Flattening: To convert the 2D image into a 1D vector, you need to reshape it from **(1, 28, 28)** to (1, 28 * 28), which is **(1, 784)**.
 
 ## Data Processing
