@@ -9,18 +9,16 @@ Below the detailed code explanation
 
 The `nn.Linear` function in PyTorch represents a fully connected layer, also known as a dense layer. It performs a linear transformation on the input data by multiplying it with a weight matrix and adding a bias vector.
 
-## Example: nn.Linear(2, 3)
+## Example: nn.Linear(3,2) 
 
 Let's visualize how a `nn.Linear(2, 3)` layer looks like:
 
 **Weights:**
 Parameter containing:
 
-<code>tensor(
-    [[ 0.2414, 0.4184],
-    [-0.3388, 0.2584],
-    [-0.3394, -0.4914]], 
-requires_grad=True)
+<code>
+tensor([[ 0.3307, -0.3544, -0.3259],
+        [-0.0868,  0.4769, -0.5488]], requires_grad=True)
 </code>
 
 **Bias:**
