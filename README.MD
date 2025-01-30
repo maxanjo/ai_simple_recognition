@@ -112,7 +112,7 @@ Dataset is an object that knows how to:
 
 The DataLoader is responsible for:
 
-- Loading data from the Dataset object (testset).
+- Loading data from the Dataset object (trainset).
 - Batching the data.
 - Shuffling the data if specified.
 
