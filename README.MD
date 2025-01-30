@@ -16,15 +16,14 @@ Let's visualize how a `nn.Linear(2, 3)` layer looks like:
 **Weights:**
 Parameter containing:
 
-<code>
-tensor([[ 0.3307, -0.3544, -0.3259],
+<code>tensor([[ 0.3307, -0.3544, -0.3259],
         [-0.0868,  0.4769, -0.5488]], requires_grad=True)
 </code>
 
 **Bias:**
 Parameter containing:
 <code>
-tensor([-0.0337, -0.3770, -0.2931], requires_grad=True)
+tensor([ 0.4526, -0.3086], requires_grad=True)
 </code>
 
 **Explanation:**
@@ -36,6 +35,9 @@ tensor([-0.0337, -0.3770, -0.2931], requires_grad=True)
 
 - These are just example random values. The actual values will be different each time you run the code.
 - These weights and biases will be updated during the training process of the neural network to learn the desired mapping between inputs and outputs.
+
+If we visualize it:
+![alt text](net_visualize.jpg)
 
 # Understanding forward function
 When you call `net(inputs)`, PyTorch internally does:
